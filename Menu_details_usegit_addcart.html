@@ -60,7 +60,7 @@
                                 <div class="col-3" style="padding-left: 2em;">
                                     <img v-on:click="ShowMyCart" style="width: 93px; height: 90px;" hspace="5" src="images/cart_icon.png">
                                     <a href="#" v-on:click="ShowMyCart" style="padding-left: 0.5em;" ><b>Add to cart</b>
-                                        <span class="position-absolute top-70 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
                                             <span class="visually-hidden" style="color: white; ">{{countitem}}</span>
                                         </span>
                                         <p></p>
@@ -253,13 +253,7 @@
                         <h4 style="background-color: red; text-align: center; color: white ;">{{product.price}} THB</h4>
                     </div>
                     <div class="row" style="padding-top: 5em; padding-left: 11em;">
-                        <div class="counter" style=" border-color: black;">
-                            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline-primary" onClick='decreaseCount(event, this)'> - </button>
-                                <input type="text" style="width: 60px; text-align: center;" value="1">
-                                <button type="button" class="btn btn-outline-primary" onClick='increaseCount(event, this)'> + </button>
-                            </div>                
-                        </div>
+                        
                         <div style="padding-left: 2.5em;">
                         <a href="#"  @click="addToCart()"><img style="width: 40px; height: 40px;" hspace="5"vspace="5"  src="images/addtocart.jpg"></a>
                         </div>
